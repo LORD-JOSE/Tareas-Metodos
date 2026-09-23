@@ -1,0 +1,20 @@
+###espero que esta sea la interpretacion correcta de "discuta" ya que no hay calculo asociado
+
+    Creo que es relevante partir recordando la definición de inestabilidad: Si es que un problema tiene un buen 
+numero de condicionamiento pero el algoritmo da errores al perturbar los datos de entrada o bien que no convergen 
+a la solución corrcta cuando se aumenta la precision.
+
+    En cuanto a los problemas de las tareas 2.3 y 2.4. Para la primera, se puede ver que los integrandos de I1 e 
+I2 tienen ambbos el termino q**-3, los cuales se terminaran eventualmente cancelando cunado hacemos la suma 
+I = I1 + I2, mientras que luego se tiene el termino 4q que queda solo. Asi entonces tenemos que tanto I1 e I2 daran 
+numeros enormes pero con signo contrario, donde se pierden muchas cifras significativas. Mientras que si unicamente
+tenemos en cuenta el 4q no se pierden ninguno de estos valores. De esta manera, combinando I = I1 + I2 hace que el 
+algoritmo sea inestale mientras que si integramos directamente el 4q el algoritmo es estable.
+
+    Por otro lado, la tarea 2.4. Aunque la suma tenga un valor conocido, este cambia en funcion de como aproximemos 
+el método de aproximación. Cuando tomamos primero los valores pequeños, entre ellos se suman con varios decimales 
+significativos, lo que hace que no se pierda mucha información respecto a la suma y cuando se suma el numero de mayor
+magnitud (el 1) ya todos los decimales fueron sumados. Paralelamente cuando sumamos primero os grandes digitos el 
+numero crece rapido al principio y los terminos de al final son mas pequeños que el espaciado de redondeo con respecto
+a la suma acumulada lo que implica que sistematicamente se van perdiendo. Lo que lo haria inestable por acumulacion de
+errores de redondeo.
