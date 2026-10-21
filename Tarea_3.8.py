@@ -20,3 +20,7 @@ plt.xlabel('Numero de particulas')
 plt.ylabel('Probabilidad de al menos una particula')
 plt.title('Distribución de n dado que al menos una partícula ha sido detectada')
 plt.show()
+
+# Nota: 7.0
+# Base: 1/1; funcionamiento: 4/4; comentarios: 1/1; claridad: 1/1.
+# La distribución de Poisson está correctamente condicionada a al menos un impacto y utiliza la tasa por segundo adecuada.
