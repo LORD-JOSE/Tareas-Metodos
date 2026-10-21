@@ -22,3 +22,6 @@ while error > 0.01:
   n = n + 1
 print(e)
 print(error)
+
+# Nota: 7.0
+# Base: 1/1; funcionamiento: 4/4; comentarios: 1/1; claridad: 1/1.
